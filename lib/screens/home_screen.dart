@@ -61,6 +61,19 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
               },
             );
           }
+          if (state is LoadingTodoState) {
+            return const Center(
+              child: CircularProgressIndicator(),
+            );
+          }
+          if (state is ErrorTodoState) {
+            return const Center(
+              child: Text(
+                '😔😔😔 Something went wrong 😔😔😔',
+                style: TextStyle(color: Colors.red, fontSize: 22),
+              ),
+            );
+          }
         }(),
       ),
     );

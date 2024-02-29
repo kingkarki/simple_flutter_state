@@ -1,9 +1,6 @@
 import 'dart:convert' as convert;
-import 'dart:convert';
-import 'dart:developer';
 
 import 'package:http/http.dart' as http;
-import 'package:post_river/models/post_model.dart';
 import 'package:post_river/models/todo_model.dart';
 
 class TodoApi {
